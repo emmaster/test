@@ -8,7 +8,6 @@ f = FileReader.new
 answers = f.read_from_file(answers_path)
 questions = f.read_from_file(questions_path)
 
-
 questions.each do |question|
   puts question
   puts "1 — Да, 2 — Нет, 3 — Иногда"
