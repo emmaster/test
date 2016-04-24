@@ -1,12 +1,11 @@
 current_path = File.dirname(__FILE__)
-require current_path + "/file_reader.rb"
+require_relative "file_reader.rb"
 answers_path = current_path + "/test_results.txt"
 questions_path = current_path + "/questions.txt"
 
+#Читаем из файлов с вопросами и ответами теста
 f = FileReader.new
 answers = f.read_from_file(answers_path)
-
-
 questions = f.read_from_file(questions_path)
 
 
